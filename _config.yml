@@ -1,1 +1,4 @@
 theme: jekyll-theme-slate
+title: Docker+binder workshop for (neuro)science
+description: Information to get started with the workshop 
+show_downloads: "true"
