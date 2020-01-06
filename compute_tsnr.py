@@ -5,7 +5,7 @@ from nilearn import masking, plotting, image
 import matplotlib.pyplot as plt
 
 
-def compute_tsnr(file=None, mask=True, map=False):
+def main(file=None, mask=True, map=False):
     """ Computes the temporal signal-to-noise ratio (TSNR) of
     a 4D fMRI file.
 
@@ -57,4 +57,4 @@ if __name__ == '__main__':
     parser.add_argument('--map', action='store_true', help='Whether to output a voxelwise TSNR map.')
     args = parser.parse_args()
     
-    compute_tsnr(args.f, args.mask, args.map)
+    main(args.f, args.mask, args.map)
