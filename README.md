@@ -1,3 +1,2 @@
-## Docker+binder workshop @ OpenMR Benelux 2020
-
+## Getting started
 Blabla
