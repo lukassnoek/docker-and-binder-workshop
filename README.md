@@ -21,5 +21,4 @@ This workshop consists of roughly three parts. In the first part, I outline *wha
 
 ## Slides (work-in-progress!)
 To get started with the workshop, follow the instructions in the slides below.
-
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQWX1FOzZFXP3Khs5OAYKM7_s4NQQbd3PAnoMM6I0CyR-zBpkLvGnFHgpBDB2rCdmFSkbIBgsIyOJe2/embed?start=true&loop=false&delayms=6000000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<<WIP>>>
