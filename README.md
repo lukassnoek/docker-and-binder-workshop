@@ -21,4 +21,5 @@ This workshop consists of roughly three parts. In the first part, I outline *wha
 
 ## Slides (work-in-progress!)
 To get started with the workshop, follow the instructions in the slides below.
-<<WIP>>>
+
+! WIP !
