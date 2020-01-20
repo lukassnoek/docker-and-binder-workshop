@@ -1,13 +1,14 @@
+import os
 import sys
 import numpy as np
 import nibabel as nib
-from nilearn import masking, plotting, image
 import matplotlib.pyplot as plt
+from nilearn import masking, plotting, image
 
 
-def main(file=None, mask=True, map=False):
-    """ Computes the temporal signal-to-noise ratio (TSNR) of
-    a 4D fMRI file.
+def main(file=None, mask=True, map=False, out_dir=None):
+    """ Computes the median temporal signal-to-noise ratio (TSNR) of
+    a 4D fMRI file (similar to what MRIQC does).
 
     Parameters
     ----------
@@ -32,9 +33,12 @@ def main(file=None, mask=True, map=False):
 
     # Apply mask
     if mask:
+        print("INFO: computing EPI mask.")
         mask = masking.compute_epi_mask(img)
     else:
-        mask = nib.Nifti1Image((img.get_fdata().sum(axis=3) != 0).astype(int), affine=img.affine)
+        # If no mask, at least remove zeros
+        nonzeros = (img.get_fdata().sum(axis=3) != 0).astype(int)
+        mask = nib.Nifti1Image(nonzeros, affine=img.affine)
 
     img_2d = masking.apply_mask(img, mask)
 
@@ -43,9 +47,18 @@ def main(file=None, mask=True, map=False):
     print(f"INFO: median TSNR = {np.median(tsnr):.3f}")
 
     if map:
+        # Recreate 3D nifti + plot with Nilearn
         tsnr_img = masking.unmask(tsnr, mask_img=mask)
         plotting.plot_epi(tsnr_img)
-        plt.savefig(file.replace('.nii.gz', '_tsnr.png'))
+        
+        # Save to disk
+        if out_dir is None:  # set dir if necessary
+            out_dir = os.path.dirname(file)
+
+        f_name = os.path.basename(file).replace('.nii.gz', '_tsnr.png')
+        f_out = os.path.join(out_dir, f_name)
+        print(f"INFO: Saving figure to {f_out}.")
+        plt.savefig(f_out)
 
 
 if __name__ == '__main__':
