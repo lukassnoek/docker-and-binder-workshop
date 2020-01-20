@@ -14,6 +14,12 @@ To actively participate in this workshop, you need to have the following softwar
 - Git or [Github desktop](https://desktop.github.com/);
 - Python (version >=3.6) or R (not *strictly* necessary);
 
+Lastly, you need to download the contents of the Github [repository](https://github.com/lukassnoek/docker-and-binder-workshop) associated with this workshop by clicking on the download buttons at the top (either as tar.gz or zipfile) or using `git`:
+
+```
+git clone https://lukas-snoek.com/docker-and-binder-workshop
+```
+
 Importantly, to use Docker, *you need admin (root) access* on the platform you want to run it on. You should have this on your own computer/laptop, but this is usually not the case for high-performance computing platforms (and some University-administrated computers!). While there are alternatives to Docker that do not need admin privileges (such as [Singularity](https://sylabs.io/)), we won't discuss those in this workshop in the interest of time.
 
 ## Contents
