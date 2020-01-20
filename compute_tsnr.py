@@ -34,7 +34,7 @@ def main(file=None, mask=True, map=False):
     if mask:
         mask = masking.compute_epi_mask(img)
     else:
-        mask = nib.Nifti1Image((img.get_data().sum(axis=3) != 0).astype(int), affine=img.affine)
+        mask = nib.Nifti1Image((img.get_fdata().sum(axis=3) != 0).astype(int), affine=img.affine)
 
     img_2d = masking.apply_mask(img, mask)
 
