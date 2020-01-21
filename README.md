@@ -26,6 +26,6 @@ Importantly, to use Docker, *you need admin (root) access* on the platform you w
 This workshop consists of roughly three parts. In the first part, I outline *what* Docker and Binder are and *why* and in *what circumstances* you (might) want to use it. In the second part, you'll learn how to use *existing* Docker containers through several hands-on exercises. Then, in the third part, you'll learn how to create *new* custom Docker images yourself, again through plenty of hands-on exercises. In the fourth and final part, I shortly explain Binder and you'll create your own Binder repository containing a completely reproducible Jupyter notebook (containing either Python or R code).
 
 ## Slides (work-in-progress!)
-To get started with the workshop, follow the instructions in the slides below.
+To get started with the workshop (for those not at OpenMRB 2020), follow the instructions in the slides below.
 
-! WIP !
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQWX1FOzZFXP3Khs5OAYKM7_s4NQQbd3PAnoMM6I0CyR-zBpkLvGnFHgpBDB2rCdmFSkbIBgsIyOJe2/embed?start=true&loop=false&delayms=600000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
