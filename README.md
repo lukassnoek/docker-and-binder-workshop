@@ -12,7 +12,6 @@ To actively participate in this workshop, you need to have the following softwar
 
 - Docker desktop; installation instructions for [Mac & Windows](https://www.docker.com/products/docker-desktop) and [Linux](https://www.docker.com/products/docker-desktop);
 - Git or [Github desktop](https://desktop.github.com/);
-- Python (version >=3.6) or R (not *strictly* necessary);
 
 Lastly, you need to download the contents of the Github [repository](https://github.com/lukassnoek/docker-and-binder-workshop) associated with this workshop by clicking on the download buttons at the top (either as tar.gz or zipfile) or using `git`:
 
@@ -23,7 +22,11 @@ git clone https://lukas-snoek.com/docker-and-binder-workshop
 Importantly, to use Docker, *you need admin (root) access* on the platform you want to run it on. You should have this on your own computer/laptop, but this is usually not the case for high-performance computing platforms (and some University-administrated computers!). While there are alternatives to Docker that do not need admin privileges (such as [Singularity](https://sylabs.io/)), we won't discuss those in this workshop in the interest of time.
 
 ## Contents
-This workshop consists of roughly three parts. In the first part, I outline *what* Docker and Binder are and *why* and in *what circumstances* you (might) want to use it. In the second part, you'll learn how to use *existing* Docker containers through several hands-on exercises. Then, in the third part, you'll learn how to create *new* custom Docker images yourself, again through plenty of hands-on exercises. In the fourth and final part, I shortly explain Binder and you'll create your own Binder repository containing a completely reproducible Jupyter notebook (containing either Python or R code).
+This workshop consists of roughly three parts.
+
+* In the first part, I outline *what* Docker and Binder are and *why* you (might) want to use it;
+* In the second part, you'll learn how to use *existing* Docker containers and how to create *new* ones yourself;
+* In the third part, I explain what Binder is and give a short demo on how to use it.
 
 ## Slides (work-in-progress!)
 To get started with the workshop (for those not at OpenMRB 2020), follow the instructions in the slides below.
